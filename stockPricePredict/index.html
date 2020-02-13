@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet"/>
+
+    <title>Google Stock Prediction</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/javascript-debug/0.4/ba-debug.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.15.3/dist/tf.min.js"> </script>
+    <script src="script.js"></script>
+  </head>
+    <body>
+      <header>
+        <h1>Stock Prediction</h1> 
+      </header>
+      <div id='main'>       
+        
+        <p>The stock will be displayed: 'opening price', 'highest price' and 'lowest price' per day</p>
+
+        <p>This website will analyse the patterns during December's price fluctuations and try to identify a trend, to be used to predict the price it will be in the future</p>
+
+        <p>Click to display predicted results for Google Stock</p>
+        <button onclick="getElementById('runButton').innerHTML=run()">Analyse</button>
+
+        <p id="runButton"></p>
+      </div>
+    </body>
+</html>
